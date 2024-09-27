@@ -53,6 +53,11 @@
           inherit (package) version;
           src = ./.;
           npmDepsHash = "sha256-XdPQugMzNaHTyjy5B7TpC6rxsCwwo/seINnkQLWEg2A=";
+          installPhase = # bash
+            ''
+              mkdir -p $out
+              mv dist/*.zip $out
+            '';
           meta = {
             inherit (package) description homepage;
             license = lib.licenses.bsd3;
