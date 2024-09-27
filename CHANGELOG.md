@@ -3,18 +3,18 @@
 All notable changes to this project will be documented in this file. See [conventional commits](https://www.conventionalcommits.org/) for commit guidelines.
 
 - - -
-## [v1.0.0](https://github.com/Gipphe/spt-items-dump/compare/61fa9aab084f099e5d5ceb4a33258284d68530a5..v1.0.0) - 2024-09-27
+## [v1.0.0](https://github.com/Gipphe/spt-dump-items/compare/61fa9aab084f099e5d5ceb4a33258284d68530a5..v1.0.0) - 2024-09-27
 #### Bug Fixes
-- retain this scope - ([ae5145b](https://github.com/Gipphe/spt-items-dump/commit/ae5145bfbb3314a30913971c367333b5d33c431f)) - [@Gipphe](https://github.com/Gipphe)
-- VFS unable to write file - ([21c556a](https://github.com/Gipphe/spt-items-dump/commit/21c556acac671dc36114955de3ae22f74f70f06f)) - [@Gipphe](https://github.com/Gipphe)
-- include spt dir in buildignore - ([0d14bc6](https://github.com/Gipphe/spt-items-dump/commit/0d14bc687641dd7c5d1d27a5cf0980d1112749bd)) - [@Gipphe](https://github.com/Gipphe)
+- retain this scope - ([ae5145b](https://github.com/Gipphe/spt-dump-items/commit/ae5145bfbb3314a30913971c367333b5d33c431f)) - [@Gipphe](https://github.com/Gipphe)
+- VFS unable to write file - ([21c556a](https://github.com/Gipphe/spt-dump-items/commit/21c556acac671dc36114955de3ae22f74f70f06f)) - [@Gipphe](https://github.com/Gipphe)
+- include spt dir in buildignore - ([0d14bc6](https://github.com/Gipphe/spt-dump-items/commit/0d14bc687641dd7c5d1d27a5cf0980d1112749bd)) - [@Gipphe](https://github.com/Gipphe)
 #### Features
-- initial implementation - ([bf62d87](https://github.com/Gipphe/spt-items-dump/commit/bf62d87b5ffd51392474ba73db17df78c854783a)) - [@Gipphe](https://github.com/Gipphe)
+- initial implementation - ([bf62d87](https://github.com/Gipphe/spt-dump-items/commit/bf62d87b5ffd51392474ba73db17df78c854783a)) - [@Gipphe](https://github.com/Gipphe)
 #### Miscellaneous Chores
-- improve logging - ([73f0fc4](https://github.com/Gipphe/spt-items-dump/commit/73f0fc45d8b163cf77e105d1df5a3e9410d5abfa)) - [@Gipphe](https://github.com/Gipphe)
-- remove unused eslint config - ([76ca15d](https://github.com/Gipphe/spt-items-dump/commit/76ca15dabffd2377ca22ec9e3e7f4501a4b34d3c)) - [@Gipphe](https://github.com/Gipphe)
-- correct author name and gitignore - ([d8a7312](https://github.com/Gipphe/spt-items-dump/commit/d8a73128969fb4cf40db18bc063ef88207f78ad8)) - [@Gipphe](https://github.com/Gipphe)
-- init - ([61fa9aa](https://github.com/Gipphe/spt-items-dump/commit/61fa9aab084f099e5d5ceb4a33258284d68530a5)) - [@Gipphe](https://github.com/Gipphe)
+- improve logging - ([73f0fc4](https://github.com/Gipphe/spt-dump-items/commit/73f0fc45d8b163cf77e105d1df5a3e9410d5abfa)) - [@Gipphe](https://github.com/Gipphe)
+- remove unused eslint config - ([76ca15d](https://github.com/Gipphe/spt-dump-items/commit/76ca15dabffd2377ca22ec9e3e7f4501a4b34d3c)) - [@Gipphe](https://github.com/Gipphe)
+- correct author name and gitignore - ([d8a7312](https://github.com/Gipphe/spt-dump-items/commit/d8a73128969fb4cf40db18bc063ef88207f78ad8)) - [@Gipphe](https://github.com/Gipphe)
+- init - ([61fa9aa](https://github.com/Gipphe/spt-dump-items/commit/61fa9aab084f099e5d5ceb4a33258284d68530a5)) - [@Gipphe](https://github.com/Gipphe)
 
 - - -
 

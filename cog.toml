@@ -23,7 +23,7 @@ path = "CHANGELOG.md"
 remote = "github.com"
 template = "remote"
 owner = "Gipphe"
-repository = "spt-items-dump"
+repository = "spt-dump-items"
 authors = [
   { signature = "Victor Nascimento Bakke", username = "Gipphe" }
 ]
