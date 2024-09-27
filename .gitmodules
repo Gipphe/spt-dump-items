@@ -1,0 +1,3 @@
+[submodule "spt"]
+	path = spt
+	url = git@dev.sp-tarkov.com:chomp/ModExamples.git
