@@ -25,7 +25,7 @@
 
         inherit (builtins) fromJSON readFile;
         package = fromJSON (readFile ./package.json);
-        zipFileName = "gipphe-sptitemsdump.zip";
+        zipFileName = "gipphe-sptdumpitems.zip";
         release = pkgs.writeShellApplication {
           name = "release";
           runtimeInputs = with pkgs; [
