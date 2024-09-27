@@ -1,4 +1,5 @@
 .direnv/
 dist/
+releases/
 node_modules/
 result

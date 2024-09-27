@@ -4,7 +4,12 @@
     flake-utils.url = "github:numtide/flake-utils";
   };
   outputs =
-    { nixpkgs, flake-utils, ... }:
+    {
+      self,
+      nixpkgs,
+      flake-utils,
+      ...
+    }:
     flake-utils.lib.eachDefaultSystem (
       system:
       let
@@ -20,13 +25,34 @@
 
         inherit (builtins) fromJSON readFile;
         package = fromJSON (readFile ./package.json);
+        zipFileName = "gipphe-sptitemsdump.zip";
+        release = pkgs.writeShellApplication {
+          name = "release";
+          runtimeInputs = with pkgs; [
+            cocogitto
+            gh
+            git
+            pandoc
+          ];
+          text = ''
+            cog bump --auto
+            version="v$(cog -v get-version)"
+            release_dir="./releases/$version"
+            mkdir -p "$release_dir"
+            cog changelog "$version" > "$release_dir/notes.md"
+            pandoc --from=gfm --to=html -o "$release_dir/notes.html" "$release_dir/notes.md"
+            cp -f "${self.packages.${system}.default}/${zipFileName}" "$release_dir/${zipFileName}"
+            git push --follow-tags
+            gh release create "$version" -F "$release_dir/notes.md" "$release_dir"/*
+          '';
+        };
       in
       {
         packages.default = pkgs.buildNpmPackage {
           pname = package.name;
           inherit (package) version;
           src = ./.;
-          npmDepsHash = "";
+          npmDepsHash = "sha256-XdPQugMzNaHTyjy5B7TpC6rxsCwwo/seINnkQLWEg2A=";
           meta = {
             inherit (package) description homepage;
             license = lib.licenses.bsd3;
@@ -36,6 +62,8 @@
           packages = with pkgs; [
             nodejs
             nixfmt-rfc-style
+            cocogitto
+            release
           ];
         };
       }
