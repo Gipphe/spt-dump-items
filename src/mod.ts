@@ -51,16 +51,19 @@ export class Main implements IPostDBLoadMod {
   }
 
   private info(msg: string): void {
-    this.log(this.logger.info, msg);
+    this.log("info", msg);
   }
   private warning(msg: string): void {
-    this.log(this.logger.warning, msg);
+    this.log("warning", msg);
   }
   private debug(msg: string): void {
-    this.log(this.logger.debug, msg);
+    this.log("debug", msg);
   }
-  private log(logFn: (m: string) => void, msg: string): void {
-    logFn(`[SPT-DUMP-ITEMS]: ${msg}`);
+  private log(
+    logFn: "info" | "warning" | "debug" | "error",
+    msg: string,
+  ): void {
+    this.logger[logFn](`[SPT-DUMP-ITEMS]: ${msg}`);
   }
 }
 
